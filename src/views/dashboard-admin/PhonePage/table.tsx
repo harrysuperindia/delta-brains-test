@@ -1,14 +1,13 @@
 import {
-  Grid, Typography
+  Grid
 } from "@mui/material";
+import React from "react";
 import { gridSpacing } from "store/constant";
-import styled from "styled-components";
+import { PhoneProfile } from "types/phone";
 import IBreadcrumsCustom from "ui-component/breadcrums";
 import MainCardPhone from "ui-component/cards/MainCardPhone";
 import TableGrid from "./tableGrid";
 import TableList from "./tableList";
-import React from "react";
-import { PhoneProfile } from "types/phone";
 
 // ==============================|| TABLE - STICKY HEADER ||============================== //
 

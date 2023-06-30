@@ -13,17 +13,6 @@ const EditPhone = Loadable(
 const AddPhone = Loadable(
   lazy(() => import("views/dashboard-admin/PhonePage/AddPhone"))
 );
-const AllUsersPage = Loadable(
-  lazy(() => import("views/dashboard-admin/AllUserPage"))
-);
-const Details = Loadable(
-  lazy(() => import("views/dashboard-admin/AllUserPage/Details"))
-);
-
-const ManageArticles = Loadable(
-  lazy(() => import("views/dashboard-admin/ManageArticles"))
-);
-
 
 const MainRoutes = {
   path: "/",
@@ -44,22 +33,7 @@ const MainRoutes = {
     {
       path: "/phone-page/add",
       element: <AddPhone />,
-    },
-    {
-      path: "/all-users",
-      element: <AllUsersPage />,
-    },
-    {
-      path: "/all-users/:_username",
-      element: <Details/>,
-    },
-    {
-      path: "/manage-articles",
-      element: <ManageArticles />,
-    },
-   
-    
-   
+    }
   ],
 };
 

@@ -9,7 +9,6 @@ import StickyHeadTable from './table';
 //import components
 
 export default function PhonePage() {
-    let newArr: PhoneProfile[] = []
 
     const dispatch = useDispatch();
     const { phone } = useSelector((state) => state.phone);
