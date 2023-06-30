@@ -11,14 +11,10 @@ import productReducer from './slices/product';
 import chatReducer from './slices/chat';
 import calendarReducer from './slices/calendar';
 import mailReducer from './slices/mail';
-import userReducer from './slices/user';
 import phoneReducer from './slices/phone';
-import detailUserReducer from './slices/detailUser';
-import allUserReducer from './slices/allUsers';
 import cartReducer from './slices/cart';
 import kanbanReducer from './slices/kanban';
 import menuReducer from './slices/menu';
-import getListWaitingReducer from './slices/projectwaiting'
 // ==============================|| COMBINE REDUCER ||============================== //
 
 const reducer = combineReducers({
@@ -38,11 +34,7 @@ const reducer = combineReducers({
     chat: chatReducer,
     calendar: calendarReducer,
     mail: mailReducer,
-    user: userReducer,
     phone: phoneReducer,
-    detailUser: detailUserReducer,
-    allUser: allUserReducer,
     menu: menuReducer,
-    getlistprojectwaiting: getListWaitingReducer,
 });
 export default reducer;
