@@ -16,8 +16,12 @@ import { ProductStateProps } from './e-commerce';
 import { ChatStateProps } from './chat';
 import { CalendarStateProps } from './calendar';
 import { MailStateProps } from './mail';
+import { UserStateProps } from './user';
 
 import { SnackbarProps } from './snackbar';
+import { ProjectWaitingStateProps } from './projectwaiting';
+import { DetailUserStateProps } from './detailUser';
+import { AllUserStateProps } from './allUsers';
 import { PhoneStateProps } from './phone';
 
 declare module '@mui/styles/defaultTheme' {
@@ -120,9 +124,13 @@ export interface DefaultRootStateProps {
     chat: ChatStateProps;
     calendar: CalendarStateProps;
     mail: MailStateProps;
+    user: UserStateProps;
+    getlistprojectwaiting:ProjectWaitingStateProps;
 }
 
 export interface DefaultRootStatePropsV2 {
+    detailUser: DetailUserStateProps;
+    allUsers: AllUserStateProps;
     phone: PhoneStateProps;
 }
 

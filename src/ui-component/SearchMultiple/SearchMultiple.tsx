@@ -1,9 +1,12 @@
-import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
-import { Grid, InputAdornment } from "@mui/material";
+import * as React from "react";
+import { useState } from "react";
+import Autocomplete from "@mui/material/Autocomplete";
+import { Grid, InputAdornment, OutlinedInput } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
+import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import { IconSearch } from "@tabler/icons";
-import * as React from "react";
+import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 interface PropsSearchMultiple {
   datatable: any;
   onchangeSearch: any;
