@@ -1,20 +1,22 @@
-import { Button, CircularProgress, FormControl, FormHelperText, Grid, InputLabel, OutlinedInput } from '@mui/material';
-import { useTheme } from '@mui/styles';
-import { Box } from '@mui/system';
-import { UN_AUTHORIZED } from 'constant/authorization';
-import { Formik } from 'formik';
-import useScriptRef from 'hooks/useScriptRef';
+import { Button, CircularProgress, FormControl, FormHelperText, Grid, InputLabel, OutlinedInput, Typography } from '@mui/material';
 import React from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { useDispatch, useSelector } from 'store';
-import { gridSpacing } from 'store/constant';
-import { addNewPhone, getDetailPhone } from 'store/slices/phone';
 import styled from 'styled-components';
-import { PhoneProfile } from 'types/phone';
+import BorderColorIcon from '@mui/icons-material/BorderColor';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import IBreadcrumsCustom from 'ui-component/breadcrums';
 import MainCard from 'ui-component/cards/MainCard';
-import AnimateButton from 'ui-component/extended/AnimateButton';
+import { gridSpacing } from 'store/constant';
+import { PhoneProfile } from 'types/phone';
+import { useDispatch, useSelector } from 'store';
+import { addNewPhone, getDetailPhone } from 'store/slices/phone';
+import useScriptRef from 'hooks/useScriptRef';
 import * as Yup from 'yup';
+import { Formik } from 'formik';
+import { UN_AUTHORIZED } from 'constant/authorization';
+import { useTheme } from '@mui/styles';
+import { Box } from '@mui/system';
+import AnimateButton from 'ui-component/extended/AnimateButton';
+import { useNavigate, useParams } from 'react-router-dom';
 
 export default function EditPhone() {
 
@@ -50,7 +52,7 @@ export default function EditPhone() {
                         </Grid>
                         <CsGridContainer>
                             <GridImage>
-                                <img style={{ width: '100%' }} src={data?.image} alt='product-phone' />
+                                <img style={{ width: '100%' }} src={data?.image} alt='image-phone' />
                             </GridImage>
                             <GridInfo>
                                 <Formik
