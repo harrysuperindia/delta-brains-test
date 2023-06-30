@@ -2,15 +2,14 @@
 import { styled } from '@mui/material/styles';
 
 // project imports
-import Header from './Header';
-import Feature from './Feature';
-import Demos from './Demos';
-import Layouts from './Layouts';
-import KeyFeature from './KeyFeature';
-import Subscribe from './Subscribe';
-import Footer from './Footer';
-import Customization from 'layout/Customization';
 import AppBar from 'ui-component/extended/AppBar';
+import Demos from './Demos';
+import Feature from './Feature';
+import Footer from './Footer';
+import Header from './Header';
+import KeyFeature from './KeyFeature';
+import Layouts from './Layouts';
+import Subscribe from './Subscribe';
 
 const HeaderWrapper = styled('div')(({ theme }) => ({
     paddingTop: 30,

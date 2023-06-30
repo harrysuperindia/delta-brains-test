@@ -32,7 +32,7 @@ export default function AddPhone() {
                 </Grid>
                 <CsGridContainer>
                     <GridImage>
-                        <img style={{ width: '100%' }} src='/assets/phone/iphone13/main-iphone13.jpg' alt='image-phone' />
+                        <img style={{ width: '100%' }} src='/assets/phone/iphone13/main-iphone13.jpg' alt='product-phone' />
                     </GridImage>
                     <GridInfo>
                         <Formik
